@@ -126,7 +126,6 @@
 
 **최종적으로는 RandomSearchCV를 통해 하이퍼 파라미터를 최적화한 아래 모델을 채택하였습니다.**
 
-    ```python
     pipe = make_pipeline(RandomForestClassifier(random_state=42))
 
     dists = {
@@ -147,7 +146,6 @@
     )
 
     clf.fit(X_train_downsample, y_train_downsample);
-    ```
 
 - 모델 성능
 
